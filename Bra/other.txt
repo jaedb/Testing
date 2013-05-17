@@ -1,1 +1,2 @@
 Merge conflicts galore. I'm now entering a new line.
+Not quite sure which line I want to keep.
