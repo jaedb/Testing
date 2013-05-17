@@ -1,2 +1,3 @@
 Merge conflicts galore. I'm now entering a new line.
+This new line is to encourage a conflict
 Not quite sure which line I want to keep.
