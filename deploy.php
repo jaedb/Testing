@@ -2,7 +2,7 @@
 
 <p>Pulling ... 
 
-<?php $output = shell_exec('/var/www/test/public_html/ && git pull 2>&1'); ?>
+<?php $output = `/var/www/test/public_html/ && git pull 2>&1'`; ?>
 
 done!</p>
 
