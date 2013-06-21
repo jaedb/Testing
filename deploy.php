@@ -7,6 +7,13 @@
 ?>
  done</p>
 
+<hr />
+ 
 <pre>
-	<?php echo $output; ?>
+	<?php 
+		print_r( $output );
+		file_put_contents('../logs/git.log', $output, FILE_APPEND);
+	?>
 </pre>
+
+<hr />
