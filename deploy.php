@@ -12,7 +12,7 @@
 <pre>
 	<?php 
 		print_r( $output );
-		file_put_contents('../logs/git.log', $output, FILE_APPEND);
+		file_put_contents('/var/www/test/logs/git.log', $output, FILE_APPEND);
 	?>
 </pre>
 
