@@ -21,9 +21,18 @@
 		// send an email
 		$to      = 'james@barnsley.co.nz';
 		$subject = 'Auto-Deployment';
-		$headers = 'From: test@dev.jamesbarnsley.co.nz' . "\r\n" .
-			'Reply-To: test@dev.jamesbarnsley.co.nz' . "\r\n" .
+		$headers = 'From: git@'.$_SERVER['SERVER_NAME'].'' . "\r\n" .
+			'Reply-To: git@'.$_SERVER['SERVER_NAME'].'' . "\r\n" .
 			'X-Mailer: PHP/' . phpversion();
+					
+		// To send HTML mail, the Content-type header must be set
+		$headers  = 'MIME-Version: 1.0' . "\r\n";
+		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+		
+		// Additional headers
+		$headers .= 'To: James Barnsley <james@barnsley.co.nz>' . "\r\n";
+		$headers .= 'From: Website <git@'.$_SERVER['SERVER_NAME'].'>' . "\r\n";
+
 		$message = '
 			<div style="font-family: Arial, Helvetica, sans-serif;">
 				<div style="font-size: 18px; font-weight: bold; padding: 5px 0;">Auto-deployment</div>
