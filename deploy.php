@@ -38,9 +38,7 @@
 				<div style="font-size: 18px; font-weight: bold; padding: 5px 0;">Auto-deployment</div>
 				<div style="padding: 5px 0;">The server has successfully pulled from the GitHub repository.</div>
 				<hr />
-				<pre>
-					'.$output.'
-				</pre>
+				<pre>'.$output.'</pre>
 				<hr />
 				<div style="padding: 5px 0;">See updated site here: <a href="'.$_SERVER['SERVER_NAME'].'">'.$_SERVER['SERVER_NAME'].'</a></div>';
 
