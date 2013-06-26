@@ -43,7 +43,11 @@ body {
 <div style="height: 20px; margin-bottom: 20px; border-bottom: 2px solid #CCCCCC;"></div>
 
 	<?php
-
+		
+		echo '<pre>';
+		print_r( json_decode($_POST, true) );
+		echo '</pre>';
+		
 		// save to log
 		$log_output = date('Y-m-d H:i:s') .' -- Successfully auto-pulled branch '.$branch;
 		file_put_contents('../logs/git.log', $log_output, FILE_APPEND);
